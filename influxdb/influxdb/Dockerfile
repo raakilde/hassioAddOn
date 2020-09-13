@@ -9,7 +9,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 
 RUN \
-    mount /dev/sda1 /mnt && \
     apt-get update \
     && apt-get install -y --no-install-recommends \
         libnginx-mod-http-lua=1.14.2-2+deb10u3 \
@@ -76,3 +75,9 @@ LABEL \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
+
+# Copy data
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]
