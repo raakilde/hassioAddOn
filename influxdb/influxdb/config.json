@@ -23,6 +23,7 @@
     "8086/tcp": "InfluxDB server"
   },
   "full_access": true,
+  "privileged": ["NET_ADMIN", "SYS_ADMIN", "SYS_RAWIO", "SYS_TIME", "SYS_NICE"],
   "hassio_api": true,
   "auth_api": true,
   "hassio_role": "default",
