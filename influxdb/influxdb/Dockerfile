@@ -9,6 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 
 RUN \
+    mount /dev/sda1 /mnt && \
     apt-get update \
     && apt-get install -y --no-install-recommends \
         libnginx-mod-http-lua=1.14.2-2+deb10u3 \

@@ -23,6 +23,7 @@
     "8086/tcp": "InfluxDB server"
   },
   "full_access": true,
+  "privileged": ["SYS_ADMIN"],
   "hassio_api": true,
   "auth_api": true,
   "hassio_role": "default",
@@ -35,6 +36,7 @@
     "keyfile": "privkey.pem",
     "envvars": []
   },
+  "devices": ["/dev/sda1:/dev/sda1:rwm"],
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "auth": "bool",
