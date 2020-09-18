@@ -76,8 +76,5 @@ LABEL \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
 
-# Copy data
-#COPY run.sh /
-#RUN chmod a+x /run.sh
-
-#CMD [ "/run.sh" ]
+RUN mkdir /mnt/usb
+RUN mount /dev/sda1 /mnt/usb
