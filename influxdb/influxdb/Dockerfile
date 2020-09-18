@@ -9,9 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 
 RUN \
-    mkdir /mnt/usb \
-    && mount /dev/sda1 /mnt/usb \
-    && apt-get update \
+    apt-get update \
     && apt-get install -y --no-install-recommends \
         libnginx-mod-http-lua=1.14.2-2+deb10u3 \
         luarocks=2.4.2+dfsg-1 \
