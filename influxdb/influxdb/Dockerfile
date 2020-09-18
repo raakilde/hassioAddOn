@@ -77,7 +77,7 @@ LABEL \
     org.opencontainers.image.version=${BUILD_VERSION}
 
 # Copy data
-COPY run.sh /
-RUN chmod a+x /run.sh
+#COPY run.sh /
+#RUN chmod a+x /run.sh
 
-CMD [ "/run.sh" ]
+#CMD [ "/run.sh" ]
