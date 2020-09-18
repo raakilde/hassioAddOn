@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 
 RUN \
-    mkdir /mnt/usb \ 
+    mkdir /mnt/usb \
     && mount /dev/sda1 /mnt/usb \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
