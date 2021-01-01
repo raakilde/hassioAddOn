@@ -29,9 +29,6 @@
     "mqtt_user": "str",
     "mqtt_password": "str",
     "mqtt_topic": "str",
-    "protocol": "int",
     "frequency": "int",
-    "gain": "int",
-    "frequency_offset": "int"
    }
 }
