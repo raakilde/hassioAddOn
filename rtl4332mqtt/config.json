@@ -29,6 +29,6 @@
     "mqtt_user": "str",
     "mqtt_password": "str",
     "mqtt_topic": "str",
-    "frequency": "int",
+    "frequency": "int"
    }
 }
