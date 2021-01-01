@@ -21,7 +21,7 @@
     "mqtt_user": "",
     "mqtt_password": "",
     "mqtt_topic": "homeassistant/sensor/rtl433",
-    "frequency": 433920000,
+    "frequency": 433920000
   },
   "schema":
   {
