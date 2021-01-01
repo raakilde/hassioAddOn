@@ -23,7 +23,7 @@ RUN apk add --no-cache --virtual build-deps alpine-sdk cmake git libusb-dev && \
     git clone git://git.osmocom.org/rtl-sdr.git && \
     cd /tmp/src/rtl-sdr && \
     git fetch --tags && \
-    git checkout v20.02 && \
+    git checkout tags/v20.02 && \
     mkdir /tmp/src/rtl-sdr/build && \
     cd /tmp/src/rtl-sdr/build && \
     cmake ../ -DINSTALL_UDEV_RULES=ON -DDETACH_KERNEL_DRIVER=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr/local && \
